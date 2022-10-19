@@ -1,0 +1,312 @@
+html {
+    background-image: url("fondo.png");
+    background-size: cover;
+    word-break: break-word;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #352b48;
+}
+
+a:hover {
+    color: darkslateblue;
+}
+
+/* Título y subtítulo */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans:wght@100&display=swap');
+
+h1 {
+    font-family: 'Smooch Sans', sans-serif;
+    margin: 12px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'League Gothic', sans-serif;
+    margin: 12px;
+    font-size: x-large;
+    text-align: center;
+}
+
+h4 {
+    padding: 1%;
+    margin-bottom: 1px;
+}
+
+/* Header */
+
+header {
+    background-color: rgb(111,156,185, 0.8);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5px;
+}
+
+#cabecera {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+#page {
+    width: 25%;
+    float: left;
+    margin-right: 70%;
+}
+
+#sesion {
+    width: 15%;
+    padding: 1%;
+    text-align: right;
+}
+
+#sesion img {
+    width: 40%;
+}
+
+/* Menú */
+
+nav{
+    width: 100%;
+    height: 6.5%;
+    left: 1%;
+}
+
+nav a{
+    background-color: #82B6D8;
+    color: black;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+    text-align: center;
+}
+
+ul li a{
+    margin: 2px;
+    text-decoration: none;
+    padding: 3px 7px;
+    display: block;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+header nav ul li a:hover{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+ul > li{
+    float: left;
+    text-align: center;
+}
+
+/* Cuerpo de sección */
+
+main {
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+}
+
+#seccion {
+    width: 80%;
+    padding: 4px;
+    margin-right: 2%;
+}
+
+#audiovisuales {
+    text-align: center;
+}
+
+/* Tabla */
+
+table {
+    background-color: rgb(255, 255, 255, 0.6); 
+    text-align: center;
+    padding: 10px;
+}
+
+tr {
+    padding: 10px;
+}
+
+td {
+    background-color: rgba(107, 225, 255, 0.4);
+    font-size: small;
+}
+
+th {
+    background-color: rgba(100, 162, 255, 0.4);
+    font-size: medium;
+}
+
+/* Download */
+
+#pdf {
+    width: 50%;
+    height: auto;
+    display: flex;
+}
+
+#download {
+    width: 5%;
+    height: auto;
+    margin: none
+}
+
+/* Banners */
+
+.responsive-banner {
+    width: 20%;
+    float: right;
+    background-color: rgb(148,208,247, 0.4);
+}
+
+.banner {
+	position: relative;
+}
+
+img {
+    margin: 2%;
+	max-width : 95%;
+	position: relative;
+    border-radius: 5px;
+}
+
+input {
+    margin: 2%;
+    margin-top: none;
+	max-width : 95%;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(56,78,93, 0.6);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: xx-small;
+    display: flex;
+}
+
+#redes {
+    width: 29%;
+    float: left;
+}
+
+#menu-footer {
+    width: 69%;
+}
+
+#menu-footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 2%;
+    text-align: center;
+}
+
+footer img {
+    width: 20px;
+    height: auto;
+}
+
+footer a {
+    color: #b6e2ff;
+}
+
+footer a:hover {
+    color: #94D0F7;
+    font-size: small;
+}
+
+/* Inicio sesion */
+
+#login-box {
+    border: 1px solid blue;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15%;
+    background: #00000080;
+    padding: 20px 50px;
+}
+
+#login-box h1 {
+    color: white;
+}
+
+#login-box .form .item input {
+    width: 200px;
+    border: 0;
+    border-bottom: 5px solid white;
+    font-size: 18px;
+    background: #ffffff00; 
+    color: white;
+    padding: 5px 10px;
+}
+
+#login-box .form .item i {
+    color: white;
+    font-size: 18px;
+}
+
+#login-box button {
+    border: 0; 
+    width: 150px; 
+    height: 30px;
+    margin-top: 18px; 
+    font-size: 18px; 
+    color: white;
+    border-radius: 25px; 
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); 
+}
+
+.item img {
+    width: 45px;
+}
+
+input::placeholder {
+    color: blanchedalmond;
+}
+
+/* Ir arriba */
+
+.n {
+    position:fixed;
+    bottom:0;
+    right:0;
+}
+
+.n .ppal{
+    border: #82B6D8 solid 1px;
+}
+
+/* Ha iniciado sesión */
+
+#mensaje {
+    border: #352b48 solid 1px;
+    background-color: #82B6D8;
+    border-radius: 5px;
+    text-align: center;
+    margin: 25%;
+    color: aliceblue;
+    font-size: xx-large;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Bibi"/>
+		<title>Bridge</title>
+		<link rel="stylesheet" href="formatoBridge.css">
+        <link rel="icon" href="bridgeFavicon.ico">
+	</head>
+	<body>
+        <form action="gracias.html" method="POST">
+            <div id="login-box">
+                <h1>Login</h1>
+                <div class="form">
+                    <div class="item">
+                        <img src="InicioSesion.jpg" alt="">
+                        <input type="text" placeholder="username" name="username" title="Debe usar mayúsculas, minúsculas y/o números únicamente." pattern="^([A-ZÑÁÉÍÓÚa-zñáéíóú1-9]" required/>
+                    </div>
+                    <div class="item">
+                        <img src="llave.jpg">
+                        <input type="password" placeholder="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" title="Debe contener al menos una mayúscula, una minúscula, un número y un símbolo (!@#$%^&*_=+-), debe tener al menos 8 caracteres." required>
+                    </div>
+                </div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <div class="n"><a href="bridgePage.html" title="Ir a la pagina principal" class="ppal">Pagina ppal</a></div>
+    </body>
+</html>
