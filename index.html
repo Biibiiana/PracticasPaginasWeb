@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Formulario Red Social.- Bibiana Antequera.</title>
+        <meta charset="utf-8">
+        <style>
+            table, th, td, tr{
+                border: 1px solid black;
+            }
+
+            th{
+                text-align: center;
+            }
+
+        </style>
+        <script>
+            function copiaTexto(aText,destination){
+                destination.innerHTML=aText.value;
+            }
+        </script>	
+    </head>
+    <body>
+        <h1>Red Social</h1>
+
+        <form action="ProcesaFormulario.html" method="get">
+            <fieldset>
+                <legend><h2>Datos personales.</h2></legend>
+                <label for="name">Nombre: <input type="text" name="name" title="Debe empezar por mayúscula y el resto minúsculas. Si es un nombre compuesto, debe separarse por espacios y todos los nombres deben seguir ese patrón. No se aceptan números ni caracteres especiales." pattern="^(?=.{2,25}$)([A-ZÑÁÉÍÓÚ][a-zñáéíóú]+)([ ][A-ZÑÁÉÍÓÚ][a-zñáéíóú]+)*?$" required/></label>
+                <br>
+                <label for="surname">Apellidos: <input type="text" name="surname" title="Deben incluirse dos apellidos, empezando en mayúscula y seguido de minúsculas. No se aceptan números ni caracteres especiales." pattern="^(?=.{2,25}$)[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+ [A-ZÑÁÉÍÓÚ][a-zñáéíóú]+$" required/></label>
+                <br>
+                <label for="sex">Sexo: </label>
+                <label><input name="sex" type="radio" value="Mujer" required/>Mujer</label>
+                <label><input name="sex" type="radio" value="Hombre"/>Hombre</label>
+                <br/>
+                <label for="birthdate">Fecha de nacimiento: <input type="date" name="birthdate" required/></label>
+                <br>
+                <label for="age">Edad: <input type="number" name="age" min="18" max="100" required/></label>
+                <br>
+                <label for="tlf">Teléfono: <input type="tel" name="tlf" placeholder="Formato: 123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/></label>
+                <br>
+                <label for="pageweb">Página web: <input type="url" name="pageweb" placeholder="http(s)://(www.)jgtcftgctyc.1234(/)" title="Debe indicarse http:// o https:// seguido de www que puede aparecer o no, el nombre del servidor que puede contener letras, números, puntos y guiones, seguido de la extensión que será obligatoria y de entre 2 y 6 letras (no números ni caracteres especiales). Puede o no, incluir una barra (/) al final." pattern="http(s)?:\/\/(www.)?[A-ZÁÉÍÓÚa-zñáéíóú1-9\.\-]+\.([A-ZÁÉÍÓÚÑa-záéíóúñ]){2,6}\/?" required/></label>
+                <!-- Cuando ponemos más de tres w en el www. te lo cuenta como parte del cuerpo de la url la web, entra en la parte de [A-ZÁÉÍÓÚa-zñáéíóú1-9\.\-]+ omitiendo el www. 
+                puesto que es posible omitirlo, por lo que el validador funciona correctamente.  -->
+                <legend><h2>Datos de cuenta.</h2></legend>
+                <label for="user">Usuario: <input type="text" name="user" placeholder="Introduzca su nombre de usuario." title="Puede contener letras mayúsculas y minúsculas, números, guiones, subrayados, puntos, el resto de caracteres no están permitidos. Debe ser una única palabra, no debe empezar por un número y al menos debe tener una extensión de entre 8 y 16 caracteres." pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú\-_\.][A-ZÑÁÉÍÓÚa-zñáéíóú1-9\-_\.]{7,15}" required></label>
+                <br>
+                <label for="email">Correo electrónico: <input type="email" name="email" placeholder="name@example.com" title="La parte del nombre serán números y letras, guiones, puntos y subrayados, pero no puede empezar por guión, punto o subrayado. A continuación se indicará la @ y el nombre del servidor que puede contener letras, números, puntos y guiones, seguido de la extensión que será obligatoria y de entre 2 y 6 letras (no números ni caracteres especiales). Tenga en cuenta que no pueden aparecer dos puntos seguidos. " pattern="^[A-ZÑÁÉÍÓÚa-zñáéíóú1-9]{1}[A-ZÑÁÉÍÓÚa-zñáéíóú1-9\.-]+@[A-ZÑÁÉÍÓÚa-zñáéíóú1-9\.-]+\.[A-ZÑÁÉÍÓÚa-zñáéíóú]{2,4}$" required/></label>
+                <br>
+                <label for="pasword">Contraseña: <input type="password" name="selectorPassw" placeholder="Inserte su contraseña." title="Debe incluir al menos una minúscula, una mayúscula, un número y un carácter especial ( ! @ # $ % ^ & * _ = + - . [espacio] )" pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{4,}$" required/></label>
+                <br>
+                <label for="repeatpsw">Repite la contraseña: <input type="password" name="selectorPassw" placeholder="Repita la misma contraseña." title="Debe incluir al menos una minúscula, una mayúscula, un número y un carácter especial ( ! @ # $ % ^ & * _ = + - . [espacio] )" pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{4,}$" required/></label>
+                <legend><h2>Gustos y aficiones.</h2></legend>
+                <label for="aficiones">Aficiones: </label>
+                <label><input name="aficiones1" type="checkbox" value="Deportes" />Deportes</label>
+                <label><input name="aficiones2" type="checkbox" value="Video Juegos" />Video Juegos</label>
+                <label><input name="aficiones3" type="checkbox" value="Cocinar" />Cocinar</label>
+                <label><input name="aficiones4" type="checkbox" value="Bailar" />Bailar</label>
+                <br>
+                <label for="color">Color favorito: <input type="color" name="color"/></label>
+                <br>
+                <br>
+                <br>
+                <label for="reset"><input type="reset" value="Limpiar Formulario"/></label>
+                <br>
+                <label for="sent"><input type="image" name="BotonDeEnvio" src="img_submit.gif" alt="Enviar"></label>
+            </fieldset>
+        </form>
+    </body>
+</html>

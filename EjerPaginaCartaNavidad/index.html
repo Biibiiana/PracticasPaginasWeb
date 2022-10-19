@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="Navidad.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="favicon.ico">
+        <title>Solicitud Formal de Regalos - Feliz Navidad!!</title>
+    </head>
+    <body>
+        <header>
+            <h1>Feliz navidad</h1>
+        </header>
+        <br>
+        <br>
+        <nav class="contenido">
+            <h3>Saber más sobre: </h3>
+            <ol type="I">
+              <li><a href="https://es.wikipedia.org/wiki/Pap%C3%A1_Noel" target="_blank">¿Santa o Papá Noel?</a></li>
+              <li><a href="roscon.html">Roscón de Reyes</a></li>
+              <li><a href="https://www.notimerica.com/sociedad/noticia-celebra-dia-navidaddistintas-religiones-20141224090411.html" target="_blank">Formas de celebrar</a></li>
+                <ul style="list-style-type: square;">
+                    <li>Budismo</li>
+                    <li>Islamismo</li>
+                    <li>Judaísmo</li>
+                    <li>Cristianismo</li>
+                </ul>
+            </ol>
+            <h4>Patrocinadores: </h4>
+            <a href="https://www.amazon.es/ref=nav_logo" target="_blank"><img src="amazon.png" width="180px"></a>
+            <a href="https://es.aliexpress.com/" target="_blank"><img src="aliexpress.png" width="180px"></a>
+            <a href="https://www.game.es/" target="_blank"><img src="game.png" width="180px"></a>
+        </nav>
+        <h2>Solicitud formal de Regalos de Navidad</h2>
+        <table>
+            <tr>
+                <th colspan="5">Querido...:</th>
+            </tr>
+            <tr>
+                <td>Santa Claus</td>
+                <td colspan="3">Los Reyes Magos</td>
+                <td>Otros</td>
+            </tr>
+            <tr>
+                <td><label for="claus"><img src="Claus.jpg" height="150px"></label></td>
+                <td colspan="3"><label for="melchor"><img src="Melchor.png" height="150px"></label><label for="gaspar"><img src="Gaspar.png" height="150px"></label><label for="baltasar"><img src="Baltasar.png" height="150px"></label></td>
+                <td><label for="otros"><img src="Otro.png" height="150px"></label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="Claus" id="claus"></td>
+                <td><input type="radio" name="melchor" id="melchor"></td>
+                <td><input type="radio" name="gaspar" id="gaspar"></td>
+                <td><input type="radio" name="baltasar" id="baltasar"></td>
+                <td><input type="radio" id="otros" checked></td>
+            </tr>
+            <tr>
+                <td>Santa Claus</td>
+                <td>Melchor</td>
+                <td>Gaspar</td>
+                <td>Baltasar</td>
+                <td>Otros</td>
+            </tr>
+        </table>
+        <hr>
+        <form action="envio.php" target="_blank">
+            <p>Nombre : <input type="text" name="nombre" title="Pon aquí tu nombre." placeholder="¿Cómo te llamas?" Required> e-mail: <input type="email" name="email"  title="Indica un e-mail válido." placeholder="tu@email.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"></p>
+            <p>Soy un/una <label for="chico">chico</label><input type="radio" name="chico" id="chico"><label for="chica">chica</label><input type="radio" name="chica" id="chica"> ¡Y ya tengo <input type="number" min="0" max="17" required> años!</p>
+            <p>Vivo en la ciudad de <input type="text" name="ciudad"> que está en 
+                <label>
+                    <select name="país" required>
+                        <option value="es">España</option>
+                        <option value="ar">Argentina</option>
+                        <option value="b">Bolivia</option>
+                        <option value="ch">Chile</option>
+                        <option value="c">Colombia</option>
+                        <option value="o" selected>Otro...</option>
+                    </select>
+                </label>
+            </p>
+            <p>Este año me he portado: 
+                <label>
+                    <select name="portado" required>
+                        <optgroup label="Bien">
+                            Bien
+                            <option value="b">¡He sido todo un angelito!</option>
+                        </optgroup>
+                        <optgroup label="Regular">
+                            <option value="rb">Regular-bien</option>
+                            <option value="r" selected>Regular</option>
+                            <option value="rm">Regular-mal</option>
+                        </optgroup>
+                        <optgroup label="Mal">
+                            <option value="m">Mal</option>
+                        </optgroup>
+                    </select>
+                </label>
+            </p>
+            <p>Algunas cosas que me gustaría recibir por Navidad este año son: <label for="libro">libro</label><input type="radio" multiple name="regalo1"><label for="Juego de Mesa">Juego de Mesa</label><input type="radio" multiple name="regalo2"><label for="VideoConsola">VideoConsola</label><input type="radio" multiple name="regalo3"><label for="Cheque Regalo">Cheque Regalo</label><input type="radio" multiple name="regalo4"></p>
+            <p>P.D. Casi me olvido de agregar otros comentarios.</p>
+            <textarea name="detalles" id="detalles" cols="80" rows="10" spellcheck="false"></textarea>
+            <p><input type="submit" value="Enviar"> o <input type="resert" value="Empezar de nuevo"></p>
+        </form>
+    </body>
+    <footer>
+        <div>
+            <br>
+            <div id="footer">Contacto: <a href="mailto:correo@empresa.com?subject=Problemas%20con%20mi%20carta.">correo@empresa.com</a> | Gracias por su visita.</div><br>
+        </div>
+    </footer>
+</html>

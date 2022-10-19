@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Formularios con GET Red Social</title>
+        <meta charset="utf-8">
+        <style>
+            table, th, td, tr{
+                border: 1px solid black;
+            }
+
+            th{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p><b>PARÁMETROS: </b> <br/> <span id="ejRef"></span></p>
+
+        <table>
+            <tr><th colspan="2">PARÁMETROS RECIBIDOS</th></tr>
+
+            <tr><th>Nombre</th><th>Dato introducido por el usuario</th></tr>
+
+            <tr> <th colspan="2">Datos personales</th></tr>
+
+            <tr>
+                <td>
+                    Nombre
+                </td>
+                <td>
+                    <span id="name"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Apellidos
+                </td>
+                <td>
+                    <span id="surname"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sexo
+                </td>
+                <td>
+                    <span id="sex"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fecha de nacimiento
+                </td>
+                <td>
+                    <span id="birthdate"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Edad
+                </td>
+                <td>
+                    <span id="age"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Teléfono
+                </td>
+                <td>
+                    <span id="tlf"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Página web
+                </td>
+                <td>
+                    <span id="pageweb"></span>
+                </td>
+            </tr>
+
+            <tr> <th colspan="2">Datos de cuenta</th></tr>
+
+            <tr>
+                <td>
+                    Usuario
+                </td>
+                <td>
+                    <span id="user"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Correo electrónico
+                </td>
+                <td>
+                    <span id="email"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Contraseña
+                </td>
+                <td>
+                    <span id="pasword"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Repite la contraseña
+                </td>
+                <td>
+                    <span id="repeatpsw"></span>
+                </td>
+            </tr>
+
+            <tr> <th colspan="2">Gustos y Aficiones</th></tr>
+
+            <tr>
+                <td>
+                    Aficiones
+                </td>
+                <td>
+                    <span id="aficiones"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Color favorito
+                </td>
+                <td>
+                    <span id="color"></span>
+                </td>
+            </tr>
+        </table>
+
+        <script>
+
+            const urlParams = new URLSearchParams(window.location.search);
+
+            var myElement = document.getElementById("ejRef");
+            myElement.innerHTML=urlParams;
+
+            myElement = document.getElementById("name");
+            myElement.innerHTML=urlParams.get("name");
+
+            myElement = document.getElementById("surname");
+            myElement.innerHTML=urlParams.get("surname");
+
+            myElement = document.getElementById("sex");
+            myElement.innerHTML=urlParams.get("sex");    
+
+            myElement = document.getElementById("birthdate");
+            myElement.innerHTML=urlParams.get("birthdate");
+
+            myElement = document.getElementById("age");
+            myElement.innerHTML=urlParams.get("age");
+
+            myElement = document.getElementById("tlf");
+            myElement.innerHTML=urlParams.get("tlf");
+
+            myElement = document.getElementById("pageweb");
+            myElement.innerHTML=urlParams.get("pageweb");
+
+            myElement = document.getElementById("user");
+            myElement.innerHTML=urlParams.get("user");
+
+            myElement = document.getElementById("email");
+            myElement.innerHTML=urlParams.get("email");
+
+            myElement = document.getElementById("pasword");
+            myElement.innerHTML=urlParams.get("pasword");
+
+            myElement = document.getElementById("repeatpsw");
+            myElement.innerHTML=urlParams.get("repeatpsw");
+
+            myElement = document.getElementById("aficiones");
+            myElement.innerHTML=urlParams.get("aficiones");
+
+            myElement = document.getElementById("color");
+            var color = urlParams.get("color");
+            myElement.value = color.replace("%23","#");
+
+        </script>
+    </body>
+</html>

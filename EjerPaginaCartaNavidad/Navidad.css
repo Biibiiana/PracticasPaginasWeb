@@ -1,0 +1,71 @@
+		@font-face {
+    			font-family: 'pacificoregular';
+    			src: 	url('../fonts/pacifico-regular-webfont.woff2') format('woff2'),
+         			url('../fonts/pacifico-regular-webfont.woff') format('woff');
+    			font-weight: normal;
+    			font-style: normal;
+		}
+		
+		body{
+			display: flex; 
+			flex-wrap: wrap;
+		}
+		
+		header h1{
+			font-family: "pacificoregular", sans-serif;
+			text-align: center;
+			color: white;
+			text-shadow: 0 0 3px #000000;
+		}
+		
+		header {
+			background-image: url(Navidad.webp);			
+  			background-size: auto 150px;
+			background-color: #e6ccff;
+			height: 100px;
+			width: 100%;
+		}
+		
+		nav {	
+			text-align: left;
+			background-color: #34A65F;
+			width: 190px;
+            padding-left: 10px;
+		}
+		
+		main{
+			text-align: center;
+			background-color: #f5e1e1;
+			width: calc(100% - 200px);;
+		
+		}
+		
+		footer{
+			text-align: center;
+			background-color: #235E6F;
+			width:100%;
+			color: white;
+			font-weight: bold;
+		}
+		
+		h2{
+			font-family: "pacificoregular", sans-serif;
+			text-align: center;
+			color: black;
+			text-shadow: 0 0 3px #CC231E;
+		}
+		
+		
+		table.center {
+    			margin-left:auto; 
+    			margin-right:auto;
+  		}
+		
+		table, th, td{
+			
+			border: 3px solid black;
+			border-collapse: collapse;
+		}
+		
+		
+
