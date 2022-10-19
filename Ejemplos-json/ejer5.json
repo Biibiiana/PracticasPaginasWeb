@@ -1,0 +1,28 @@
+{
+    "Obra_de_un_pintor": [
+      {
+        "nombre": "Picasso",
+        "Fecha_nacimiento": "25 de octubre de 1881",
+        "Lugar_Nacimiento": "Malaga",
+        "Fecha_defuncion": "8 de abril de 1973",
+        "Lugar_Defuncion": "Mougins, Francia",
+        "obras": [
+            {
+                "titulo": "Guernica",
+                "anio": "1937",
+                "url": null
+            },
+            {
+                "titulo": "La mujer que llora",
+                "anio": "1937",
+                "url": null
+            },
+            {
+                "titulo": "Las señoritas de Avignon",
+                "anio": "1907",
+                "url": null
+            }
+        ]
+      }
+    ]
+}

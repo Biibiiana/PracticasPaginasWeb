@@ -1,0 +1,35 @@
+{
+    "equipo": [
+      {
+        "nombre": "C++",
+        "color_equipacion": "azul",
+        "estadio": "Rouge",
+        "entrenador": 
+            {
+                "nombre": "Phil",
+                "apellido": "Jackson"
+            },
+        "page_web": 1983,
+        "posiciones": [
+            {
+                "posicion": "base",
+                "nombre": "Pau",
+                "apellido": "Gasol",
+                "dorsal": 1
+            },
+            {
+                "posicion": "alero",
+                "nombre": "Mark",
+                "apellido": "Gasol",
+                "dorsal": 2
+            },
+            {
+                "posicion": "pivot",
+                "nombre": "Ricki",
+                "apellido": "Rubio",
+                "dorsal": 3
+            }
+        ]
+      }
+    ]
+}

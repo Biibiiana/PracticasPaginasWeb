@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Bibi"/>
+		<title>Formulario.</title>
+		<link rel="stylesheet" href="formato.css">
+	</head>
+	<body>
+        <header>
+            <h1>Formulario.</h1>
+        </header>
+        <main>
+            <form action="ProcesaFormulario.html" method="get">
+                <fieldset>
+                    <label for="name">Nombre: <input type="text" name="name" title="Debe empezar por mayúscula y el resto minúsculas. Si es un nombre compuesto, debe separarse por espacios y todos los nombres deben seguir ese patrón. No se aceptan números ni caracteres especiales." pattern="^(?=.{2,25}$)([A-ZÑÁÉÍÓÚ][a-zñáéíóú]+)([ ][A-ZÑÁÉÍÓÚ][a-zñáéíóú]+)*?$" required/></label>
+                    <br>
+                    <label for="surname">Apellidos: <input type="text" name="surname" title="Deben incluirse dos apellidos, empezando en mayúscula y seguido de minúsculas. No se aceptan números ni caracteres especiales." pattern="^(?=.{2,25}$)[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+ [A-ZÑÁÉÍÓÚ][a-zñáéíóú]+$" required/></label>
+                    <br>
+                    <label for="email">Correo electrónico: <input type="email" name="email" placeholder="name@example.com" title="La parte del nombre serán números y letras, guiones, puntos y subrayados, pero no puede empezar por guión, punto o subrayado. A continuación se indicará la @ y el nombre del servidor que puede contener letras, números, puntos y guiones, seguido de la extensión que será obligatoria y de entre 2 y 6 letras (no números ni caracteres especiales). Tenga en cuenta que no pueden aparecer dos puntos seguidos. " pattern="^[A-ZÑÁÉÍÓÚa-zñáéíóú1-9]{1}[A-ZÑÁÉÍÓÚa-zñáéíóú1-9\.-]+@[A-ZÑÁÉÍÓÚa-zñáéíóú1-9\.-]+\.[A-ZÑÁÉÍÓÚa-zñáéíóú]{2,4}$" required/></label>
+                    <br>
+                    <label for="pasword">Contraseña: <input type="password" name="selectorPassw" placeholder="Inserte su contraseña." title="Debe incluir al menos una minúscula, una mayúscula, un número y un carácter especial ( ! @ # $ % ^ & * _ = + - . [espacio] )" pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{4,}$" required/></label>
+                    <br>
+                    <label for="repeatpsw">Repite la contraseña: <input type="password" name="selectorPassw" placeholder="Repita la misma contraseña." title="Debe incluir al menos una minúscula, una mayúscula, un número y un carácter especial ( ! @ # $ % ^ & * _ = + - . [espacio] )" pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{4,}$" required/></label>
+                    <br>
+                    <label for="sent"><input type="submit" class="boton" name="Aceptación" alt="Enviar"></label>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

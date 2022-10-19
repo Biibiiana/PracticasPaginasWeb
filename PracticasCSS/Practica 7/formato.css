@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+div {
+    border: 2px dotted red;
+    padding: 5%;
+    margin: 5px;
+}
+
+a {
+    background-color: grey;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:visited {
+    background-color: red;
+}
+
+a:hover {
+    background-color: black;
+}
+
+a:visited {
+    background-color: blue;
+}

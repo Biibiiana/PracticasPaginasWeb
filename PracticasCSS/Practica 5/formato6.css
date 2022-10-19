@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    margin: 15px;
+    width: 99%;
+    height: 6.5%;
+    left: 10px;
+}
+
+nav, a{
+    background-color: rgb(177, 177, 177);
+    color: black;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+ul li a{
+    margin: 2px;
+    text-decoration: none;
+    padding: 3px 7px;
+    display: block;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+ul li a:hover{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+ul > li{
+    float: left;
+    text-align: center;
+}
+
+ul li:hover > ul{
+    display: block;
+}

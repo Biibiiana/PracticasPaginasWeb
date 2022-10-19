@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    margin: 15px;
+    width: 15%;
+    height: 6.5%;
+    left: 10px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+nav a:nth-child(odd) {
+    color: white;
+}
+
+nav a:first-child {
+    background-color:rgb(79, 167, 255);
+}
+
+nav a:first-child:hover {
+    background-color: royalblue;
+}
+
+nav a:nth-child(3) {
+    background-color: dimgray;
+}
+
+nav a:nth-child(3):hover {
+    background-color: black;
+}
+
+nav a:nth-child(even) {
+    color: black;
+    background-color: rgb(240, 240, 240);
+}
+
+nav a:nth-child(even):hover {
+    color: black;
+    background-color: burlywood;
+}
+
+#menu a{
+    text-decoration: none;
+    padding: 3px 7px;
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+#menu a:hover{
+    font-weight: bold;
+    font-size: large;
+}
+
+main {
+    margin: 2%;
+}

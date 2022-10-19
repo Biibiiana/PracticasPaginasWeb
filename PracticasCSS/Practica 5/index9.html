@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Bibi"/>
+		<title>Formulario de registro</title>
+		<link rel="stylesheet" href="formato9.css">
+	</head>
+	<body>
+        <form action="ProcesaFormulario.html" method="get">
+            <h1>Formulario de registro</h1>
+            <fieldset>
+                <hr>
+                <div class="apartado" id="apartado1">
+                    <p class="cabecera">Nombre y apellidos</p>
+                    <div class="bloque">
+                        <input type="text" name="name"required/>
+                        <p>Nombre</p>
+                    </div>
+                    <br>
+                    <div class="bloque">
+                        <input type="text" name="surname1" required/>
+                        <p>Primer apellido</p>
+                    </div>
+                    <br>
+                    <div class="bloque">
+                        <input type="text" name="surname2" required/>
+                        <p>Segundo apellido</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="apartado" id="apartado2">
+                    <p class="cabecera">Dirección</p>
+                    <div class="bloque">
+                        <input type="text" name="direction"required/>
+                        <p>Calle, número, piso, puerta</p>
+                    </div>
+                    <br>
+                    <div id="columnas">
+                        <div class="bloque">
+                            <input type="text" name="cp"required/>
+                            <p>Código postal</p>
+                        </div>
+                        <br>
+                        <div class="bloque">
+                            <input type="text" name="city"required/>
+                            <p>Municipio</p>
+                        </div>
+                        <br>
+                        <div class="bloque">
+                            <select name="province">
+                                <option value="">Elige una opción</option>
+                                <optgroup label="Andalucía">
+                                    <option value="Huelva">Huelva</option>
+                                    <option value="Sevilla">Sevilla</option>
+                                    <option value="Cadiz">Cádiz</option>
+                                    <option value="Cordoba">Córdoba</option>
+                                    <option value="Malaga">Málaga</option>
+                                    <option value="Granada">Granada</option>
+                                    <option value="Jaen">Jaén</option>
+                                    <option value="Almeria">Almería</option>
+                                </optgroup>
+                                <optgroup label="Murcia">
+                                    <option value="Murcia">Murcia</option>
+                                </optgroup>
+                                <optgroup label="Extremadura">
+                                    <option value="Badajoz">Badajoz</option>
+                                    <option value="Caceres">Cáceres</option>
+                                </optgroup>
+                            </select> 
+                            <p>Provincia</p>
+                        </div>
+                        <br>
+                        <div class="bloque">
+                            <select name="country">
+                                <option value="España">España</option>
+                                <option value="Grecia">Grecia</option>
+                                <option value="Noruega">Noruega</option>
+                                <option value="Italia">Italia</option>
+                                <option value="Alemania">Alemania</option> 
+                            </select> 
+                            <p>País</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="apartado" id="apartado3">
+                    <p class="cabecera">Email</p>
+                    <input type="email" name="email" placeholder="name@example.com" title="La parte del nombre serán números y letras, guiones, puntos y subrayados, pero no puede empezar por guión, punto o subrayado. A continuación se indicará la @ y el nombre del servidor que puede contener letras, números, puntos y guiones, seguido de la extensión que será obligatoria y de entre 2 y 6 letras (no números ni caracteres especiales). Tenga en cuenta que no pueden aparecer dos puntos seguidos. " pattern="^[A-ZÑÁÉÍÓÚa-zñáéíóú1-9]{1}[A-ZÑÁÉÍÓÚa-zñáéíóú1-9\.-]+@[A-ZÑÁÉÍÓÚa-zñáéíóú1-9\.-]+\.[A-ZÑÁÉÍÓÚa-zñáéíóú]{2,4}$" required/>
+                </div>
+                <hr>
+                <div class="apartado" id="apartado4">
+                    <p class="cabecera">Teléfono</p>
+                    <div class="bloque">
+                        <input type="tel" name="fijo" placeholder="Formato: 123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/>
+                        <p>Fijo</p>
+                    </div>
+                    <br>
+                    <div class="bloque">
+                        <input type="tel" name="movil" placeholder="Formato: 123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/>
+                        <p>Móvil</p>
+                    </div>
+                </div>
+                <hr>
+            </fieldset>
+            <label for="sent" class="apartado"><input type="submit" class="boton" name="Registrarse" alt="Registrarse"></label>
+        </form>
+    </body>
+</html>
